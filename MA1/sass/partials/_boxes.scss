@@ -1,0 +1,34 @@
+.box {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.common-boxes {
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.box__item {
+	@extend .common-boxes;
+	background: getColour(beige);
+}
+
+.box__item--white {
+	@extend .common-boxes;
+	background-color: white;
+	border: 3px solid getColour(pink);
+}
+
+.box__item--pink {
+	@extend .common-boxes;
+	background: getColour(pink);
+	border: 3px solid white;
+}

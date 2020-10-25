@@ -1,0 +1,10 @@
+$colours: (
+	grey: #e5e5e5,
+	pink: #c32c72,
+	beige: #f4f3ee,
+	heading: #463f3a,
+);
+
+@function getColour($colour) {
+	@return map-get($colours, $colour);
+}
